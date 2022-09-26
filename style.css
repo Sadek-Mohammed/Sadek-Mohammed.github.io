@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 20rem;
+    max-height: 10vh;
+    min-height: 10vh;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    padding-right: 3rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.header a {
+    transition: 0.5s ease;
+}
+
+.header a:hover {
+    transform: scale(1.1);
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.land {
+    display: flex;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.4rem;
+}
+
+.land-word,
+.land-photo {
+    width: 50%;
+}
+
+.land-photo {
+    padding: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.land {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.typewrite {
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.content-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+}
