@@ -53,7 +53,7 @@ header {
 }
 
 .footer {
-    background-color: #f0f0f0;
+    background-color: #000016;
     color: #fff;
     padding: 2em;
     display: flex;
@@ -70,7 +70,7 @@ header {
 }
 
 .footer .social-icons a {
-    color: #000016;
+    color: #fff;
     font-size: 1.3em;
     padding: 0 12px 0 0;
 }
@@ -105,8 +105,54 @@ section {
     flex-wrap: wrap;
 }
 
-.cards {
+.paper {
     background-color: #000016;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.summary-material {
+    display: flex;
+}
+
+.summary-title {
+    text-align: center;
+    color: #3a6cf4;
+    writing-mode: vertical-rl;
+    padding-right: 25px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.summary-body {
+    padding-bottom: 15px;
+}
+
+.paper-download {
+    text-decoration: none;
+    color: #3a6cf4;
+    background-color: #fff;
+    border: 1px #3a6cf4 solid;
+    padding: 10px;
+    transition: all 0.7s;
+}
+
+.paper-download:hover {
+    background-color: #3a6cf4;
+    color: #fff;
+}
+
+.cards {
+    background-color: #fff;
 }
 
 .card {
@@ -116,7 +162,7 @@ section {
     border-radius: 10px;
     padding: 25px;
     margin: 15px;
-    transition: 0.7s ease;
+    transition: 0.5s ease;
     display: flex;
     flex-direction: column;
 }
@@ -142,7 +188,7 @@ section {
     margin: 10px;
 }
 
-@media (max-width:1023px) {
+@media (max-width:1100px) {
     header {
         padding: 12px 20px;
     }
@@ -166,9 +212,18 @@ section {
     }
 }
 
-@media (max-width:641px) {
+@media (max-width:700px) {
     body {
         font-size: 12px;
+    }
+
+    .summary-material {
+        flex-direction: column;
+    }
+
+    .summary-title {
+        writing-mode: horizontal-tb;
+        padding-bottom: 15px;
     }
 }
 
