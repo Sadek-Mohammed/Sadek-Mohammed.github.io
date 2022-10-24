@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?sgvgrg');
+    src:  url('fonts/icomoon.eot?sgvgrg#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?sgvgrg') format('truetype'),
+      url('fonts/icomoon.woff?sgvgrg') format('woff'),
+      url('fonts/icomoon.svg?sgvgrg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,10 +18,24 @@
     scroll-behavior: smooth;
 }
 
-.icon-codeforces {
-    width: 32px;
-    height: 32px;
-}
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-codeforces:before {
+    content: "\e900";
+    color: #fff;
+  }
 
 header {
     background-color: #f0f0f0;
@@ -154,10 +178,6 @@ section {
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
-}
-
-#academics{
-    
 }
 
 #activities{
