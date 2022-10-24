@@ -156,6 +156,14 @@ section {
     margin: 10px;
 }
 
+#academics{
+    
+}
+
+#activities{
+    background-color: #000016;
+}
+
 .explore {
     display: inline-block;
     text-decoration: none;
@@ -173,7 +181,7 @@ section {
 }
 
 .projects {
-    background-color: #000016;
+    background-color: #fff;
 }
 
 .projects .content {
