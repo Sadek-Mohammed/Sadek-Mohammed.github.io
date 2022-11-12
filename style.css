@@ -345,3 +345,81 @@ section {
 
     }
 }
+
+.closer{
+    text-align: center;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.main-modal{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 200px 50px;
+    background-color: #fff;
+}
+
+.main-modal-title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.modal-question{
+ font-size: 1.8em;   
+ font-weight: 400;
+ display: block;
+ margin-bottom: 0.25em;
+}
+
+.main-modal-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1023px) {
+    .main-modal {
+        padding: 70px 20px;
+    }
+
+    .main-modal-title {
+        font-size: 1.8em;
+    }
+
+    .modal-question {
+        font-size: 1.4em;
+    }
+
+    .main-modal-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.swiper{
+    width: 600px;
+    height: 300px;
+}
+
+
+.omcc-slide-1{
+    background-image: url("images/work2.jpg ");
+    background-size: cover;
+}
+
+.omcc-slide-2{
+    background-image: url("images/work2.jpg ");
+    background-size: cover;
+}
+
+.omcc-slide-3{
+    background-image: url("images/work2.jpg ");
+    background-size: cover;
+}
