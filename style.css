@@ -350,6 +350,7 @@ section {
     text-align: center;
     cursor: pointer;
     font-size: 2em;
+    /* color: #fff; */
 }
 
 .main-modal{
@@ -358,7 +359,7 @@ section {
     flex-direction: column;
     text-align: center;
     padding: 100px 200px 50px;
-    background-color: #fff;
+    background-color: #000016;
 }
 
 .main-modal-title {
@@ -402,12 +403,17 @@ section {
         align-items: center;
     }
 }
-
 .swiper{
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    max-width: 75rem;
+    text-align: center;
 }
 
+
+.swiper-img{
+    width: 100%;
+    height:auto;
+}
 
 .omcc-slide-1{
     background-image: url("images/work2.jpg ");
@@ -422,4 +428,47 @@ section {
 .omcc-slide-3{
     background-image: url("images/work2.jpg ");
     background-size: cover;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px solid rgba(1 1 1 / 15%);
+    margin-bottom: 2em;
+}
+
+.summary-material {
+    display: flex;
+}
+
+.summary-title {
+    text-align: center;
+    color: #3a6cf4;
+    writing-mode: vertical-rl;
+    padding-right: 25px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.summary-body {
+    padding-bottom: 15px;
+}
+
+
+@media (max-width:700px) {
+
+    .summary-material {
+        flex-direction: column;
+    }
+
+    .summary-title {
+        writing-mode: horizontal-tb;
+        padding-bottom: 15px;
+    }
 }

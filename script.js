@@ -58,6 +58,7 @@ window.onload = function () {
 };
 
 const swiper = new Swiper('.swiper', {
+    autoHeight: false,
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -76,5 +77,9 @@ const swiper = new Swiper('.swiper', {
     // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
+    },
+
+    autoplay: {
+        delay: 3000,
     },
 });
