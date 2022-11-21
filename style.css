@@ -150,6 +150,7 @@ section {
 }
 
 .modal-cards{
+    padding-top: 50px;
     background-color: #000016;
 }
 
@@ -468,6 +469,13 @@ section {
 
 
 @media (max-width:700px) {
+    .main-modal{
+        padding-bottom: 25px;
+    }
+
+    .modal-cards{
+        padding-top: 25px;
+    }
 
     .summary-material {
         flex-direction: column;
@@ -477,4 +485,18 @@ section {
         writing-mode: horizontal-tb;
         padding-bottom: 15px;
     }
+}
+
+.paper-download {
+    text-decoration: none;
+    color: #3a6cf4;
+    background-color: #fff;
+    border: 1px #3a6cf4 solid;
+    padding: 10px;
+    transition: all 0.7s;
+}
+
+.paper-download:hover {
+    background-color: #3a6cf4;
+    color: #fff;
 }
