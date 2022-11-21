@@ -149,6 +149,24 @@ section {
     align-items: center;
 }
 
+.main-modal-dark{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 200px 20px;
+    background-color: #000016;
+}
+
+.main-modal-white{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 200px 20px;
+    background-color: #fff;
+}
+
 .modal-cards{
     padding-top: 50px;
     background-color: #000016;
@@ -313,8 +331,12 @@ section {
         font-size: 1.8em;
     }
 
-    section {
-        padding: 80px 20px;
+    section
+    {
+        padding: 60px 20px;
+    }
+    .main-modal-dark, .main-modal-white {
+        padding: 20px 20px 10px;
     }
 
     .main-content h2 {
@@ -360,13 +382,18 @@ section {
     /* color: #fff; */
 }
 
-.main-modal{
-    width: 100%;
+
+
+.buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttons a {
     text-align: center;
-    padding: 100px 200px 0px;
-    background-color: #000016;
 }
 
 .main-modal-title {
@@ -494,6 +521,7 @@ section {
     border: 1px #3a6cf4 solid;
     padding: 10px;
     transition: all 0.7s;
+    margin-top: 10px;
 }
 
 .paper-download:hover {
