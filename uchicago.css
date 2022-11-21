@@ -28,7 +28,7 @@
   
   .icon-codeforces:before {
     content: "\e900";
-    color: #000;
+    color: #fff;
   }
 * {
     font-family: 'Poppins', sans-serif;
@@ -82,8 +82,8 @@ header {
 }
 
 .footer {
-    background-color: #f0f0f0;
-    color: #000;
+    background-color: #000016;
+    color: #fff;
     padding: 2em;
     display: flex;
     justify-content: space-around;
