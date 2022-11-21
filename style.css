@@ -145,6 +145,12 @@ section {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.cards{
+    background-color: #000016;
 }
 
 .card {
@@ -358,7 +364,7 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 100px 200px 50px;
+    padding: 100px 200px 0px;
     background-color: #000016;
 }
 
