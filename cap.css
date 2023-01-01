@@ -105,6 +105,41 @@ header {
 }
 
 /* Start Page */
+.paper-download {
+    text-decoration: none;
+    color: #3a6cf4;
+    background-color: #fff;
+    border: 1px #3a6cf4 solid;
+    padding: 10px;
+    transition: all 0.7s;
+    margin-top: 10px;
+}
+
+.paper-download:hover {
+    background-color: #3a6cf4;
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    text-align: center;
+}
+.canvas-container{
+    width: 50%;
+}
+@media only screen and (max-width: 700px) {
+    .canvas-container{width: 100%;}
+}
+canvas{
+    max-width: 100%;
+}
 
 .main {
     width: 100%;
@@ -222,4 +257,9 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
+}
+.canvas-containers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

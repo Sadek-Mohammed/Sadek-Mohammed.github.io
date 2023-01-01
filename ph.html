@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="cap.css">
+    <link rel="shortcut icon" href="logo final.png" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src='https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Sadek M. ElSayed | UChicago Optional Video Profile</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="/" class="logo" style="height: 1.8em;">
+            Cap 333
+        </a>
+        <nav class="navigation">
+            <a href="/ph.html">PH</a>
+            <a href="/air.html">Air Quality</a>
+            <a href="/level.html">Water Level</a>
+            <a href="/temp.html">Temperature</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <section class="main">
+            <div class="title">
+                Cap Group 333 | ${Group's Name}
+            </div>
+            <div class="main-content">
+            </div>
+            <div class="buttons">
+                <a href="portfolio.pdf" class="paper-download">Download Portfolio</a>
+                <a href="A4.pdf" class="paper-download">Download A4 Poster</a>
+                <a href="poster.pdf" class="paper-download">Download Full-size Poster</a>
+            </div>
+        </section>
+        <section class="canvas-containers">
+            <div class="canvas-container">
+                <canvas style="width: 100%; height: 100%;" id="phGraphMain"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas style="width: 100%; height: 100%;" id="phGraphMin"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas style="width: 100%; height: 100%;" id="phGraphMax"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas style="width: 100%; height: 100%;" id="phGraphDev"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas style="width: 100%; height: 100%;" id="phGraphSkew"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas style="width: 100%; height: 100%;" id="phGraphMed"></canvas>
+            </div>
+            <div class="canvas-container">
+                <canvas style="width: 100%; height: 100%;" id="phGraphMean"></canvas>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/sadek-mohammed-7a38a71b2/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Sadek-Mohammed"><i class="fab fa-github"></i></a>
+            <a href="http://codeforces.com/profile/Sadek_Mo" id="codeforces-container">
+                <span class="icon-codeforces"></span>
+            </a>
+        </div>
+        <div class="email">
+            Contact at: me@sadek.me
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/simple-statistics@7.8.0/dist/simple-statistics.min.js"></script>
+    <script src="cap.js"></script>
+</body>
+
+</html>
