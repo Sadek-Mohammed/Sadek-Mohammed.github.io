@@ -106,6 +106,10 @@ header {
 
 /* Start Page */
 
+section {
+    /* padding: 50px 200px; */
+}
+
 .main {
     width: 100%;
     display: flex;
