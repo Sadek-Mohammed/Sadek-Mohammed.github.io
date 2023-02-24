@@ -85,17 +85,15 @@ const swiper = new Swiper('.swiper', {
 });
 
 const swiper2 = new Swiper('.swiper-outer', {
-    autoHeight: false,
+    autoHeight: true,
     // Optional parameters
     direction: 'horizontal',
     loop: true,
 
     // If we need pagination
-
     pagination: {
         el: '.swiper-pagination',
     },
-
 
     // Navigation arrows
     navigation: {

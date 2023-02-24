@@ -317,6 +317,8 @@ section {
     justify-content: space-around;
 }
 
+
+
 .footer-title {
     font-size: 1.3em;
     font-weight: 600;
@@ -568,4 +570,10 @@ section {
 .paper-download:hover {
     background-color: #3a6cf4;
     color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
 }
